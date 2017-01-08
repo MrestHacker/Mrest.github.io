@@ -1379,6 +1379,16 @@ pre .javascript .function {
 .sidebar a:hover {
   color: #eee;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar {
+    display: none !important;
+  }
+}
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
@@ -1426,6 +1436,7 @@ pre .javascript .function {
 }
 .site-author-name {
   margin: 5px 0 0;
+  text-align: center;
   color: #222;
 }
 .site-description {
@@ -1500,7 +1511,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff7c58;
+  background: #25ffde;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1645,6 +1656,32 @@ pre .javascript .function {
 }
 .cc-license img {
   display: inline-block;
+}
+.busuanzi-count:before {
+  content: " ";
+  float: left;
+  width: 260px;
+  min-height: 25px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .busuanzi-count {
+    width: auto;
+  }
+  .busuanzi-count:before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .busuanzi-count {
+    width: auto;
+  }
+  .busuanzi-count:before {
+    display: none;
+  }
+}
+.site-uv::after {
+  content: "|";
+  padding-left: 10px;
 }
 .theme-next #ds-thread #ds-reset {
   color: #555;
@@ -2145,7 +2182,7 @@ body {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: 600px;
+  width: 700px;
   background: #fff;
   min-height: 700px;
 }
@@ -2338,13 +2375,6 @@ body {
 }
 .site-author:after {
   clear: both;
-}
-.site-author-image {
-  float: left;
-  margin-right: 10px;
-  max-width: 64px;
-  border-width: 1px;
-  border-color: #eee;
 }
 .site-author-name {
   margin: 0;
